@@ -5,6 +5,7 @@
         function setPage() {
             var newSrc = './img/' + currentPage + '.png'
             document.getElementById('image').setAttribute('src', newSrc);
+            document.getElementById('page-counter').textContent = currentPage;
         }       
         document.getElementById('button-next').addEventListener('click', function () {            
             if( currentPage < PAGE_COUNT) {
